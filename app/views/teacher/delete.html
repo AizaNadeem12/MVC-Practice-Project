@@ -1,0 +1,27 @@
+<head>
+    <style>
+        body {
+            background-image: url('https://www.pngmagic.com/product_images/light-blue-sky-background.jpg');
+        }
+        .button {
+            /* White */
+            border: none;
+            padding: 5px 22px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #008CBA;
+            color: black;
+            cursor: pointer;
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<form action="http://localhost:5000/?controller=teacher&action=delete" , method="POST">
+    <fieldset>
+        <h1>Enter Teacher ID to delete teacher</h1>
+        Teacher ID:<br>
+        <input type="text" id="teacher_id" name="id">
+        <br><br>
+        <input type="submit" class="button button" value="Submit">
+    </fieldset>
+</form>

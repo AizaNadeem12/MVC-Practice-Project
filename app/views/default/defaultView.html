@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background-image: url('https://www.pngmagic.com/product_images/light-blue-sky-background.jpg');
+        }
+
+        .button {
+            /* White */
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 8px;
+            background-color: #f1f1f1;
+            color: black;
+            cursor: pointer;
+            width: 30%;
+            margin-top: 2%;
+            margin-left: 35%;
+            margin-right: 35%;
+        }
+
+        .button:hover {
+            background-color: #008CBA;
+            color: rgb(255, 255, 255);
+        }
+
+        .main {
+            margin-top: 15%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <input type="submit" onClick="myStudent()" class="button button" id="student_default" value="Student" />
+        <input type="submit" onClick="myTeacher()" class="button button" id="teacher_default" value="Teacher" />
+        <input type="submit" onClick="myCourse()" class="button button" id="course_default" value="Course" />
+    </div>
+    <script>
+        function myStudent() {
+            window.location.href = "http://localhost:5000/?controller=student";
+        }
+        function myTeacher() {
+            window.location.href = "http://localhost:5000/?controller=teacher";
+        }
+        function myCourse() {
+            window.location.href = "http://localhost:5000/?controller=course";
+        }
+    </script>
+
+
+</body>
+
+</html>

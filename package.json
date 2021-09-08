@@ -1,0 +1,42 @@
+{
+  "name": "mvc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "nyc qunit",
+    "start": "nodemon server.js",
+    "doc": "jsdoc -c jsdoc.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mostache": "^1.2.0",
+    "mustache": "^4.2.0",
+    "sinon": "^11.1.2",
+    "sync-mysql": "^3.0.1"
+  },
+  "devDependencies": {
+    "cypress": "^8.3.0",
+    "jsdoc": "^3.6.7",
+    "nodemon": "^2.0.12",
+    "nyc": "^15.1.0",
+    "qunit": "^2.16.0"
+  },
+  "nyc": {
+    "include": [
+      "core"
+    ],
+    "exclude": [
+      "core/models/database/driver/mysqli/driver.js",
+      "core/autoload.js",
+      "core/dispatcher.js",
+      "core/request.js",
+      "core/response.js"
+    ],
+    "reporter": [
+      "html"
+    ]
+  }
+}

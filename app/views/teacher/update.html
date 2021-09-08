@@ -1,0 +1,33 @@
+<head>
+    <style>
+        body {
+            background-image: url('https://www.pngmagic.com/product_images/light-blue-sky-background.jpg');
+        }
+        .button {
+            /* White */
+            border: none;
+            padding: 5px 22px;
+            text-align: center;
+            border-radius: 8px;
+            background-color: #008CBA;
+            color: black;
+            cursor: pointer;
+            margin-left: 3%;
+        }
+    </style>
+</head>
+<form action="http://localhost:5000/?controller=teacher&action=update" , method="POST">
+    <fieldset>
+        <h1>Enter Teacher ID and it's information you want to update</h1>
+        Teacher ID:<br>
+        <input type="text" id="teacher_id" name="id">
+        <br>
+        First name:<br>
+        <input type="text" id="teacher_firstname" name="firstname">
+        <br>
+        Last name:<br>
+        <input type="text" id="teacher_lastname" name="lastname">
+        <br><br>
+        <input type="submit" id="teacher_submit" class="button button" value="Submit">
+    </fieldset>
+</form>

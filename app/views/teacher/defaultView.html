@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url('https://www.pngmagic.com/product_images/light-blue-sky-background.jpg');
+            }
+    
+            .button {
+                /* White */
+                border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                border-radius: 8px;
+                background-color: #f1f1f1;
+                color: black;
+                cursor: pointer;
+                width: 30%;
+                margin-top: 2%;
+                margin-left: 35%;
+                margin-right: 35%;
+            }
+    
+            .button:hover {
+                background-color: #008CBA;
+                color: rgb(255, 255, 255);
+            }
+    
+            .main {
+                margin-top: 15%;
+            }
+        </style>
+    </head>
+<body>
+    <div class="main">
+    <input type="submit" onClick="Add()" class="button button" id="teacher_create" value="Add Teacher" />
+    <input type="submit" onClick="List()" class="button button" id="teacher_list" value="List Data" />
+    <input type="submit" onClick="Update()" class="button button" id="teacher_update" value="Update Teacher" />
+    <input type="submit" onClick="Delete()" class="button button" id="teacher_delete" value="Delete Teacher" />
+    </div>
+    <script>
+        function Add() {
+            window.location.href = "http://localhost:5000/?controller=teacher&action=create";
+        }
+        function List() {
+            window.location.href = "http://localhost:5000/?controller=teacher&action=read";
+        }
+        function Update() {
+
+            window.location.href = "http://localhost:5000/?controller=teacher&action=update";
+        }
+        function Delete() {
+            window.location.href = "http://localhost:5000/?controller=teacher&action=delete";
+        }
+    </script>
+
+
+</body>
+
+</html>
